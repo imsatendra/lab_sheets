@@ -10,13 +10,11 @@ const drinks = (n) => {
     }
 
 }
-//console.log(drinks(21));
 
 function drinksPrint(numbers) {
     let result = "";
     numbers.forEach(number => {
-        //result = result + number + " : " + drinks(number) + "\n";
-        let drink =drinks(number);
+        let drink = drinks(number);
         result = result + `${number} : ${drink}` + "\n";
     })
     return result;
